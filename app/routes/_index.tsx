@@ -51,7 +51,7 @@ export default function Index() {
                     <Link
                       to="/login"
                     >
-                       <img
+                      <img
                         src="/_static/loginbutton.png"
                         alt="Remix"
                         className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
