@@ -21,15 +21,23 @@ export default function Index() {
               <div className="absolute inset-0 bg-[color:rgba(255,56,56,0.5)] mix-blend-multiply" />
             </div>
             <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-red-700 drop-shadow-md">
-                  Wizduds
-                </span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
+              <img
+                      src="/_static/logo.png"
+                      alt="Wizduds logo customized fantasy apparel lets see what we can conjure up."
+                      className="w-full"
+                    />
+              <p className="mx-auto py-2 mt-2 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                 Customized apparel as unique as you.
               </p>
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+              <p className="mx-auto mt-6 max-w-lg bg-red-600/60 p-8 text-center text-m text-white sm:max-w-3xl">
+                Design the clothing you wear and be a part of your fashion.
+                You no longer have to wear the bland cloths you find on the rack. 
+                Find a cool design you like wether your into anime, dragons, fairies, elves, or just cool art
+                you can find a design that fits your style. Then change colors and design aspects to make it you.
+                We are constantly adding new designs and apparel options. Dress your self from head to toe with Wizduds.
+
+              </p>
+              <div className="mx-auto mt-5 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 {user ? (
                   <Link
                     to="/notes"
@@ -38,14 +46,14 @@ export default function Index() {
                     View Notes for {user.email}
                   </Link>
                 ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                  <div className="space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-3 sm:gap-5 sm:space-y-0">
                     <Link
                       to="/join"
                     >
                       <img
                         src="/_static/signup.png"
-                        alt="Remix"
-                        className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
+                        alt="Sign up to create your customized fantasy shirt with many editable designs to choose from"
+                        className="mx-auto mt-5 w-full max-w-[12rem] md:max-w-[16rem]"
                       />
                     </Link>
                     <Link
@@ -53,27 +61,51 @@ export default function Index() {
                     >
                       <img
                         src="/_static/loginbutton.png"
-                        alt="Remix"
-                        className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
+                        alt="Login to wizduds to view your past creations and buy more unique t shirts and apparel"
+                        className="mx-auto mt-5 w-full max-w-[12rem] md:max-w-[16rem]"
+                      />
+                    </Link>
+                    <Link
+                      to="/gallery"
+                    >
+                      <img
+                        src="/_static/gallery-link-large.png"
+                        alt="Check out our fantastic gallery of customizable character art to create your t-shirt"
+                        className="mx-auto mt-5 w-full max-w-[12rem] md:max-w-[16rem]"
                       />
                     </Link>
                   </div>
                 )}
               </div>
+              <p className="mx-auto mt-6 max-w-lg bg-red-600/60 p-8 text-center text-m text-white sm:max-w-3xl">
+                wizduds is a clothing line that allows the wearer to customize and change clothing that they buy.
+                With wizduds you can select the art you want on your clothing tweek the colors and design elements and print it to a fashionable garment.
+                If you like spending hours designing avatars for the games you play you will love wizduds. 
+                Wiz duds is perfect for DnD character art and when your done building your character you can print it to a shirt. 
+                If you ever wanted a shirt that no one else has wizduds is for you. even if someone else has the same design as you you can have a 
+                different color pallet altogether. 
+
+              Welcome to a world where you can conjure the way your cloths look so that can be as unique as you.
+              Choose a design from a myriad  of fantasy and sci-fi character designs.
+              Each character design can be changed with our advanced avatar editor.
+              The editor allows you to conjure new hair styles, cloths, weapons, skin color, eyes, faces, backgrounds, prop colors and more!
+              When your creation is finished you can have it magically imbued on the apparel of your choice
+              Choose from T-shirts, Dresses, Shoes, Headbands, Socks, Jeans, Shorts, Bathing Suits, Swim Shorts, Head Wear, Hats
+              Imagine sporting your DnD character on your shirt your next campaign. When people ask where you got that cool shirt tell them its wizduds!
+              Choose from characters from different genres like Japanese anime, fantasy, and science fiction we are adding new designs every day.
+              Make sure to sign up for updates so you can be the first to see new content in our gallery. 
+              </p>
               <Link
                 to="/gallery"
                 >
                 <img
                   src="/_static/gallery-link.png"
-                  alt="Remix"
+                  alt="Enter a worlds of custom fantasy apparel where you choose how your cloths look"
                   className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
                 />
               </Link>
             </div>
           </div>
-        </div>
-
-        <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
         </div>
       </div>
     </main>
