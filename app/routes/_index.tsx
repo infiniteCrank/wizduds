@@ -8,7 +8,7 @@ export const meta: V2_MetaFunction = () => [{ title: "Wizduds custom apparel - c
 export default function Index() {
   const user = useOptionalUser();
   return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
+    <main className="relative min-h-screen bg-black sm:flex sm:items-center sm:justify-center">
       <div className="relative sm:pb-16 sm:pt-8">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
@@ -16,7 +16,7 @@ export default function Index() {
               <img
                 className="h-full w-full object-cover"
                 src="/_static/login.png"
-                alt="wizduds wizard conjuring a customized shirt for your dungeons and dragons campaign character"
+                alt="wizduds wizard conjuring a customized shirt for your DnD campaign character"
               />
               <div className="absolute inset-0 bg-[color:rgba(255,56,56,0.5)] mix-blend-multiply" />
             </div>
@@ -29,14 +29,7 @@ export default function Index() {
               <p className="mx-auto py-2 mt-2 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                 Customized apparel as unique as you.
               </p>
-              <p className="mx-auto mt-6 max-w-lg bg-red-600/60 p-8 text-center text-m text-white sm:max-w-3xl">
-                Design the clothing you wear and be a part of your fashion.
-                You no longer have to wear the bland cloths you find on the rack. 
-                Find a cool design you like wether your into anime, dragons, fairies, elves, or just cool art
-                you can find a design that fits your style. Then change colors and design aspects to make it you.
-                We are constantly adding new designs and apparel options. Dress your self from head to toe with Wizduds.
 
-              </p>
               <div className="mx-auto mt-5 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 {user ? (
                   <Link
@@ -77,6 +70,25 @@ export default function Index() {
                   </div>
                 )}
               </div>
+
+              <img
+                      src="/_static/spider-hr-top.png"
+                      alt="spider design this could be on your next shirt"
+                      className="mx-auto sm:max-w-3xl"
+                    />
+              <p className="mx-auto max-w-lg bg-red-700/60 p-8 text-center text-m text-white sm:max-w-3xl">
+                Design the clothing you wear and be a part of your fashion.
+                You no longer have to wear the bland cloths you find on the rack. 
+                Find a cool design you like wether your into anime, dragons, fairies, elves, or just cool art
+                you can find a design that fits your style. Then change colors and design aspects to make it you.
+                We are constantly adding new designs and apparel options. Dress your self from head to toe with Wizduds.
+              </p>
+              <img
+                      src="/_static/spider-hr-bottom.png"
+                      alt="Spider web design for shirt sleave or long sleave t-shirt"
+                      className="mx-auto sm:max-w-3xl"
+                    />
+
               <p className="mx-auto mt-6 max-w-lg bg-red-600/60 p-8 text-center text-m text-white sm:max-w-3xl">
                 wizduds is a clothing line that allows the wearer to customize and change clothing that they buy.
                 With wizduds you can select the art you want on your clothing tweek the colors and design elements and print it to a fashionable garment.
@@ -94,16 +106,16 @@ export default function Index() {
               Imagine sporting your DnD character on your shirt your next campaign. When people ask where you got that cool shirt tell them its wizduds!
               Choose from characters from different genres like Japanese anime, fantasy, and science fiction we are adding new designs every day.
               Make sure to sign up for updates so you can be the first to see new content in our gallery. 
-              </p>
               <Link
                 to="/gallery"
                 >
                 <img
                   src="/_static/gallery-link.png"
-                  alt="Enter a worlds of custom fantasy apparel where you choose how your cloths look"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
+                  alt="Enter our gallery of customizable designs and conjure your next new outfit"
+                  className="mx-auto mt-5 w-full max-w-[12rem] md:max-w-[16rem]"
                 />
               </Link>
+              </p>
             </div>
           </div>
         </div>
