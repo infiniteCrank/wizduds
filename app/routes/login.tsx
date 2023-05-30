@@ -76,7 +76,7 @@ export default function LoginPage() {
   }, [actionData]);
 
   return (
-    <div className="flex min-h-full flex-col justify-center">
+    <div className="flex min-h-full flex-col justify-center bg-black">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
             <div className="absolute inset-0">
@@ -88,11 +88,11 @@ export default function LoginPage() {
               <div className="absolute inset-0 bg-[color:rgba(255,56,56,0.5)] mix-blend-multiply" />
             </div>
             <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-red-700 drop-shadow-md">
-                  Wizduds
-                </span>
-              </h1>
+            <img
+                      src="/_static/logo.png"
+                      alt="Wizduds logo customized fantasy apparel lets see what we can conjure up."
+                      className="w-full"
+                    />
               <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                 Customized apparel as unique as you.
               </p>
